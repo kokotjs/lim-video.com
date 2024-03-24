@@ -1,0 +1,169 @@
+:root {
+  --primary: #4f876d;
+  --bg: rgb(218, 213, 213);
+  --td: #535252;
+  --bgn: rgb(198, 202, 198);
+  --shadow: 1px 1px 1px rgba(68, 68, 68, 0.5);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.atas {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.judul {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.judul-1 {
+  font-weight: 700;
+  font-size: medium;
+}
+
+.isi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titik {
+  border: 1px solid rgba(68, 68, 68, 0.1);
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  min-width: 45%;
+  min-height: 4rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 2rem;
+}
+.titik:hover {
+  min-width: 47%;
+  min-height: 4.2rem;
+}
+
+.tombol-pesan {
+  color: rgb(6, 6, 6);
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+.titik-3 {
+  position: absolute;
+  left: 85%;
+  display: none;
+}
+.offcanvas {
+  position: absolute;
+  max-width: 70%;
+  max-height: 50%;
+  margin-top: 200px;
+  margin-left: 15%;
+}
+
+.offcanvas-header {
+  font-family: "Tauri", sans-serif;
+}
+.sosmed {
+  border: 1px solid rgba(68, 68, 68, 0.1);
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 2rem;
+}
+
+/* medi query */
+/* extra large */
+@media (max-width: 1399px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  /* body::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(35, 34, 34, 1) 5%,
+      rgba(35, 34, 34, 0) 25%
+    );
+  } */
+  .hitam {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(35, 34, 34, 1) 5%,
+      rgba(35, 34, 34, 0) 100%
+    );
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .titik {
+    min-width: 90%;
+    min-height: 5rem;
+  }
+  .titik:hover {
+    min-width: 92%;
+    min-height: 5.2rem;
+  }
+  .titik-3 {
+    display: block;
+  }
+  .judul-1 {
+    font-size: 2rem;
+  }
+  .isi-judul {
+    font-size: 1.5rem;
+    max-width: 35rem;
+  }
+}
+/* phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+}
