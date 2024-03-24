@@ -36,6 +36,9 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.isi-judul {
+  font-weight: 300;
+}
 .judul-1 {
   font-weight: 700;
   font-size: medium;
@@ -81,10 +84,13 @@ body {
   max-height: 50%;
   margin-top: 200px;
   margin-left: 15%;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
 }
 
-.offcanvas-header {
-  font-family: "Tauri", sans-serif;
+.offcanvas-title {
+  margin-left: 3rem;
+  font-weight: 700;
 }
 .sosmed {
   border: 1px solid rgba(68, 68, 68, 0.1);
@@ -109,19 +115,7 @@ body {
   html {
     font-size: 75%;
   }
-  /* body::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    height: 30%;
-    bottom: 0;
-    background: linear-gradient(
-      0deg,
-      rgba(35, 34, 34, 1) 5%,
-      rgba(35, 34, 34, 0) 25%
-    );
-  } */
+
   .hitam {
     content: "";
     display: inline-block;
@@ -159,6 +153,9 @@ body {
   .isi-judul {
     font-size: 1.5rem;
     max-width: 35rem;
+  }
+  .offcanvas {
+    max-height: 20%;
   }
 }
 /* phone */
