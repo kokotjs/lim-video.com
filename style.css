@@ -72,6 +72,8 @@ body {
   outline: none;
   border: none;
   text-decoration: none;
+  min-height: 5rem;
+  min-width: 100%;
 }
 .titik-3 {
   position: absolute;
