@@ -84,7 +84,7 @@ body {
   position: absolute;
   max-width: 70%;
   max-height: 50%;
-  margin-top: 200px;
+  margin-top: 300px;
   margin-left: 15%;
   border-radius: 5px;
   box-shadow: var(--shadow);
@@ -103,7 +103,13 @@ body {
   transition: 0.2s ease-in-out;
   margin-bottom: 2rem;
 }
-
+.tombol-sosmed {
+  color: rgb(6, 6, 6);
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
 /* medi query */
 /* extra large */
 @media (max-width: 1399px) {
